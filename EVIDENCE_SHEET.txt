@@ -1,0 +1,100 @@
+FINITE ORDERS: TWO FIXED LISTS AND STRICT MINKOWSKI EMBEDDING
+Page 1 of 2: the 30-element pair
+
+Both examples agree on the link-and-interval list and the seven spectral polynomials with directed link
+degrees from Yazdi, Letizia and Kempf (2020). These are two-layer orders. No faithful, sprinkled or
+manifoldlike-set conclusion follows. The perturbation method was not tested. Novelty is not established.
+
+30-element pair: P embeds in 2+1; Q does not.
+Vertices are 0..9. In each graph the k-th listed edge is point 10+k (k starts at 0).
+An edge (u,v) gives exactly covers u<10+k and v<10+k. There are no other relations.
+P: (0,3) (0,5) (0,6) (0,8) (1,2) (1,3) (1,4) (1,7) (2,3) (2,7)
+   (2,8) (3,6) (4,5) (4,6) (4,9) (5,6) (5,9) (7,8) (7,9) (8,9)
+Q: (0,4) (0,6) (0,8) (0,9) (1,2) (1,3) (1,8) (1,9) (2,3) (2,8)
+   (2,9) (3,5) (3,7) (4,5) (4,7) (4,9) (5,6) (5,7) (6,7) (6,8)
+
+Coordinates of P, in point order, are (t,x,y). Integers are exact.
+0:(-15,34,-25)   1:(-57,-102,63)
+2:(-18,-45,-9)   3:(-52,-35,-92)
+4:(-65,62,74)   5:(-37,39,27)
+6:(-29,89,-55)   7:(-34,-22,27)
+8:(-28,-11,1)   9:(-37,9,29)
+10:(33,20,-61)   11:(17,60,-14)
+12:(23,46,-37)   13:(23,20,-35)
+14:(30,-81,-9)   15:(58,-130,-44)
+16:(38,-31,107)   17:(14,-42,54)
+18:(27,-68,-26)   19:(9,-54,6)
+20:(7,-31,-21)   21:(52,38,-106)
+22:(9,50,65)   23:(27,99,-5)
+24:(-3,11,58)   25:(21,73,-15)
+26:(-9,21,13)   27:(-1,-31,10)
+28:(-4,2,25)   29:(1,10,-3)
+
+Reason: Q contains a K3,3 subdivision with branches {1,2,7} and {3,8,9}: paths 1-3, 1-8, 1-9, 2-3, 2-8, 2-9,
+7-3, 7-6-8, 7-4-9. Its vertex-edge order is not a circle order by Scheinerman's theorem. A finite strict 2+1
+embedding would yield disk containment (slightly contract times to remove incomparable null pairs, then add
+a common positive radius). Hence Q cannot embed. The direct integer certificate proves P embeds. The
+cospectral regular graphs are van Dam and Haemers (2003), Figure 2; this graph pair is prior work.
+
+Check from the repository root: python3 check/check_pairs.py. Python 3 standard library only. All exact
+coefficients and coordinate relations are recomputed. The written non-embedding reasons use the cited
+theorem and the argument on page 2; this is not a proof-assistant certificate.
+Repository: https://github.com/0100001001101111/aletheia-order-pairs
+pair30.json sha256:9545f7e7e92555c7b3cc5ac8d7220b3f1a8e601155b0c1ce4b4a8858e59c2ba6
+check_pairs.py sha256:49994b75b06735fd181d19bbe1ebfcfc6a1d952e25c1c9f94169550ebd3f3eb8
+
+Page 2 of 2: the 70-element pair
+
+Bottoms 0..6. A has one top for each singleton, pair and triple, ordered by size then lexicographically. B
+keeps singles and pairs, then has five repetitions of the seven triples sorted({i,(i+1) mod 7,(i+3) mod 7}),
+i=0..6 inside each repetition. Top 7+k covers exactly its subset. No other covers. A cannot embed in 3+1; B
+can.
+
+Coordinates of B are (t,x,y,z), with EVERY displayed integer divided by 1000000.
+0:(-805188,-933620,1260042,-1151947)   1:(-167197,-479734,502132,-143761)
+2:(-386304,-687705,-8079,711184)   3:(-129918,309157,130067,-17648)
+4:(-755040,915245,-979803,-551420)   5:(-229471,364487,788614,107126)
+6:(-836789,576541,1448781,1342084)   7:(685708,-1176934,1184349,-1209222)
+8:(376909,-501860,562477,6981)   9:(479708,-674184,128650,611374)
+10:(389718,-43238,-54308,-112108)   11:(494625,781845,-313207,-640826)
+12:(448105,408355,769465,-90845)   13:(700876,1023975,1180301,729185)
+14:(1045532,-737739,644353,-801559)   15:(1172577,-1728873,-172202,-219356)
+16:(722380,205410,396713,-781954)   17:(1129370,275581,460143,-1356195)
+18:(976433,267664,1282829,-642170)   19:(1116600,-255084,2054058,-13866)
+20:(598675,-567769,179893,211220)   21:(449490,-80417,228229,-42306)
+22:(814501,-433297,-274234,-584082)   23:(503237,-218174,670126,90078)
+24:(762126,-563231,1162421,397591)   25:(666074,105732,-156727,598453)
+26:(934624,-206862,-745969,582558)   27:(509842,-106694,591335,492995)
+28:(982575,-806599,677043,1126957)   29:(687364,239259,-302977,-355929)
+30:(453706,380650,447591,-107195)   31:(751449,547543,39928,785635)
+32:(951905,1232328,669766,-507480)   33:(1220547,1555190,121898,722457)
+34:(967769,677150,1196317,532796)   35:(1106316,-516895,289479,-832792)
+36:(1242913,-903295,-770485,-188701)   37:(664090,169009,30755,265589)
+38:(1370718,1243763,-547536,788452)   39:(1435904,1178957,766847,-1265321)
+40:(738735,-81854,984984,157123)   41:(1473589,-1496279,1523376,899991)
+42:(780633,-406697,92087,-502169)   43:(1278653,-847645,-772735,298330)
+44:(572748,59091,391972,453408)   45:(1437972,1172445,-573035,1041623)
+46:(1487930,1023160,1084513,-1279705)   47:(728138,-307075,1060671,299044)
+48:(1496851,-1563924,1285873,982235)   49:(716856,-160495,203654,-536641)
+50:(966111,-692455,-527399,-466214)   51:(716177,280470,233053,332388)
+52:(1228952,1340222,-227958,579634)   53:(1535831,1218626,1041399,-1131759)
+54:(798686,28484,993675,373297)   55:(1602067,-1321452,1711575,1135557)
+56:(698334,-318438,333541,-395410)   57:(879705,-566849,-483730,-184237)
+58:(692552,307379,58081,539633)   59:(1023212,789250,-255360,863995)
+60:(1300087,428049,799658,-1323321)   61:(985939,-1816,1319757,413886)
+62:(1390617,-879277,1704315,873584)   63:(771421,-82905,308910,-757300)
+64:(1135570,-750921,-701697,34886)   65:(728430,5791,135895,570988)
+66:(930413,927917,-59727,763511)   67:(1217516,702431,784622,-1201084)
+68:(884248,145220,1154498,192324)   69:(1248427,-1078446,1473978,808201)
+
+Reason: put Q(t,x,y,z)=x^2+y^2+z^2-t^2 and eta=diag(-1,1,1,1). Lift the seven bottoms to (-2 eta x_i,Q(x_i))
+in R^5. Radon gives equal disjoint convex combinations. One support S has at most three points. A has a top
+T above exactly S. Q(T-x_i) is affine in the lift; its weighted value is negative on S and nonnegative on
+the other support, a contradiction. For B the rational coordinates verify every ordered pair. By top size
+the two incidence row Grams are I, 5I+J, 10I+5J. Exact block identities give equality on both lists. This
+does not exclude higher-dimensional embeddings of A.
+
+Sources: arXiv:1611.09947; arXiv:2008.02291; van Dam and Haemers (2003), Fig. 2;
+Scheinerman (1991), doi:10.1137/0404040; Sidney, Sidney and Urrutia, Order 5 (1988), 1-10.
+Original circle-order proofs were not all read; SOURCES.md states the access limits.
+pair70.json sha256:28bf54088532ffab462db1827e3549a001bcc277c9665fa11300687313e7ef3c
